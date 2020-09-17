@@ -1,0 +1,30 @@
+@import '../constants.scss';
+
+.toggle-label {
+  @extend .label;
+  cursor: pointer;
+
+  .left-label, .right-label {
+    color: $grey-color;
+    font-size: small;
+
+    &--active {
+      color: black;
+    }
+  }
+
+  .field {
+    display: none;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    color: orange;
+    
+    &--colored {
+      transform: rotateY(180deg);
+      color: $grey-color;
+    }
+  }
+}

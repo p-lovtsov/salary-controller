@@ -1,0 +1,53 @@
+@import "../constants.scss";
+
+.wrapper {
+  margin: 10px 25px;
+}
+
+.heading {
+  margin: 10px 5px;
+  color: $grey-color;
+}
+
+.radio {
+  margin-left: 10px;
+}
+
+.withI {
+  display: flex;
+  align-items: center;
+
+  .iconWrapper {
+    display: flex;
+    cursor: pointer;
+  }
+
+  svg {
+    margin-left: 5px;
+    color: $grey-color;
+  }
+}
+
+.text-field-wrapper {
+  @extend .wrapper;
+
+  .text-field-label {
+    font-weight: bold;
+  }
+
+  .text-field {
+    border-radius: 15px;
+    border-color: $grey-color;
+    font-weight: 900;
+    padding: 2px 5px;
+    width: 150px;
+  }
+}
+
+.toggle-wrapper {
+  @extend .wrapper;
+}
+
+.summary-wrapper {
+  margin: 10px;
+}

@@ -1,0 +1,29 @@
+@import "../constants.scss";
+
+.label {
+  @extend .label;
+
+  .radio-input {
+    margin-right: 7px;
+  }
+}
+
+.outer-round {
+  border: 1px solid $grey-color;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  left: 1px;
+  cursor: pointer;
+
+  .inner-round {
+    background-color: black;
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+  }
+}
